@@ -1,19 +1,20 @@
 * {
   box-sizing: border-box;
+  font-family: "Times New Roman", "Times", "serif";
 }
 
-h1 {
+body {
   text-align: center;
 }
 
+
 div {
   border: 1px solid black;
-  background-color: grey;
+  text-align:left;
   width: 30%;
-  height: 150px;
   float: left;
   margin: 16px;
-  padding: 30px 5px 5px 5px;
+  padding: 25px 5px 5px 5px;
   position: relative;
 }
 
@@ -27,6 +28,7 @@ span {
   right: 0px;
 }
 
+/*dish colors*/
 #chicken {
   background-color: pink;
 }
@@ -40,26 +42,36 @@ span {
   background-color: yellow;
 }
 
-@media (min-width: 992px) {
-
+#box1 {
+  background-color: burlywood;
 }
 
+#box2 {
+  background-color: lightblue;;
+}
+
+#box3 {
+  background-color: lightgreen;;
+}
+
+/*tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
-  #box1, #box2 {
-    border: 1px solid black;
-    background-color: grey;
-    width: 40%;
-    height: 50%;
+  div{
+    padding: 25px 0px 5px 0px;
+    margin: 0px 1% 30px 1%;
   }
-
+  #box1{
+    width: 48%;
+  }
+  #box2 {
+    width: 48%;
+  }
   #box3 {
-    border: 1px solid black;
-    background-color: grey;;
-    width: 80%;
-    height: 50%;
+    width: 98%;
   }
 }
 
+/*phone*/
 @media (max-width: 767px) {
   div {
     width: 90%;
